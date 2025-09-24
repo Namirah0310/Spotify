@@ -14,7 +14,7 @@ public class Song {
         return title;
     }
     public Genre getGenre() {
-        return genre
+        return genre;
     }
     //Setters
     public void setTitle(String title){this.title = title; }
