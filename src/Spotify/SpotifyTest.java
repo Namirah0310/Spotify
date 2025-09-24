@@ -6,6 +6,7 @@ public class SpotifyTest {
     public static void main (String[] args){
         ArrayList<Song> songs = new ArrayList<>();
         welcome();
+        PremiumUser.downloadSong();
     }
     //starts the program
     public static void welcome(){
