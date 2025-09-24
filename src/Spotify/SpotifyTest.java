@@ -4,7 +4,7 @@ import java.util.ArrayList;
 //Test class
 public class SpotifyTest {
     public static void main (String[] args){
-        ArrayList<Song> songs = new ArrayList<>();
+       // ArrayList<Song> songs = new ArrayList<>();
         welcome();
         PremiumUser.downloadSong();
     }
