@@ -10,9 +10,11 @@ public class User {
     }
 
     //tilføjer sangene
-    public void addSong(ArrayList<Song> playliste, Song song){
+    public static void addSong(){
+        ArrayList<Song> playliste = new ArrayList<>();
+        Song song = new Song("Happy",Genre.JAZZ);
         playliste.add(song);
-        System.out.println("Sangen "+ song.getTitle() + "Er nu blevet tilføjet.");
+        System.out.println("Sangen "+ playliste.get(0) + " Er nu blevet tilføjet.");
     }
 
     //Fjerner Sangene

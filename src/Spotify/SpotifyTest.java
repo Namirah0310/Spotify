@@ -32,24 +32,40 @@ public class SpotifyTest {
             bruger = new FreeUser(name);
         }
 
-        //laver en boolean metode for at kunne vælge
-        boolean menuOpen = true;
-                while (menuOpen){
-                    System.out.println("---MENU---");
-                    System.out.println("---Vælg et nummer---");
-                    System.out.println("1 - Tilføj Sang");
-                    System.out.println("2 - Fjern sang");
-                    System.out.println("3 - Vis alle sange");
-                    System.out.println("4 - søg efter Sang");
-                    System.out.println("5 - Rediger sang");
-                    System.out.println("6 - Afslut.");
+        userInput();
 
-                    int Choice = input.nextInt();
+    }
 
+        public static void userInput(){
+        Scanner sc = new Scanner (System.in);
+            //laver en boolean metode for at kunne vælge
+            boolean menuOpen = true;
+            while (menuOpen) {
+                System.out.println("---MENU---");
+                System.out.println("---Vælg et nummer---");
+                System.out.println("1 - Tilføj Sang");
+                System.out.println("2 - Fjern sang");
+                System.out.println("3 - Vis alle sange");
+                System.out.println("4 - søg efter Sang");
+                System.out.println("5 - Rediger sang");
+                System.out.println("6 - Afslut.");
+
+                int Choice = sc.nextInt();
+                if (Choice == 1) {
+                    System.out.println("Adding Song.");
+                    User.addSong();
+
+                } else if (Choice == 2) {
+                    System.out.println("Removing Song.");
+
+                } else if (Choice == 6) {
+                    System.out.println("Closing program.");
+                    menuOpen = false;
+                } else {
+                    System.out.println("Input not valid");
                 }
+            }
         }
-
-
 
     }
 

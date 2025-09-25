@@ -5,7 +5,7 @@ public class Song {
     private Genre genre;
 
     //Constructor
-    public Song(String tilte, Genre genre){
+    public Song(String title, Genre genre){
         this.title = title;
         this.genre = genre;
     }
@@ -23,6 +23,6 @@ public class Song {
     //toString method
     @Override
     public String toString(){
-        return title + "---" + genre;
+        return title + " - " + genre;
     }
 }
