@@ -1,7 +1,7 @@
 package Spotify;
 
 public class FreeUser extends User {
-    private FreeUser(String name) {
+    public FreeUser(String name) {
         super(name);
     }
 

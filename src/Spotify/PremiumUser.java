@@ -1,10 +1,9 @@
 package Spotify;
 
 public class PremiumUser extends User{
-    private PremiumUser(String name ){ super (name); }
+    public PremiumUser(String name ){ super (name); }
 
-    public static void downloadSong(){
-        Song song = new Song("Happy",Genre.POP);
+    public void downloadSong(Song song){
         System.out.println ("Sangen downloades..." + song.getTitle());
     }
 }
