@@ -62,6 +62,9 @@ public class SpotifyTest {
                     User.removeSong(playliste, titel);
 
 
+                }else if(Choice == 3){
+                    System.out.println("Displays all songs.");
+                    //maybe use iterator
                 } else if (Choice == 6) {
                     System.out.println("Closing program.");
                     menuOpen = false;
