@@ -17,8 +17,8 @@ public class User {
         System.out.println("Sangen "+ playliste.get(0) + " Er nu blevet tilføjet.");
     }
 
-    //Fjerner Sangene
-    public boolean removeSong(ArrayList<Song> playliste, String titel){
+    //Fjerner Sangene 
+    public static boolean removeSong(ArrayList<Song> playliste, String titel){
         for (Song s : playliste){
             if (s.getTitle().equalsIgnoreCase(titel)){
                 playliste.remove(s);

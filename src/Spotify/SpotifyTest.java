@@ -4,9 +4,10 @@ import java.util.ArrayList;
 
 //Test class
 public class SpotifyTest {
+   public static ArrayList<Song> playliste = new ArrayList<>();
     public static void main (String[] args){
         Scanner input = new Scanner(System.in);
-        ArrayList<Song> playliste = new ArrayList<>();
+
 
 
         //Velkomst besked
@@ -57,6 +58,9 @@ public class SpotifyTest {
 
                 } else if (Choice == 2) {
                     System.out.println("Removing Song.");
+                    String titel = sc.nextLine();
+                    User.removeSong(playliste, titel);
+
 
                 } else if (Choice == 6) {
                     System.out.println("Closing program.");
