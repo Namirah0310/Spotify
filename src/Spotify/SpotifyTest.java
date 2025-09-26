@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 //Test class
 public class SpotifyTest {
-   public static ArrayList<Song> playliste = new ArrayList<>();
-    public static void main (String[] args){
-        Scanner input = new Scanner(System.in);
+    public static ArrayList<Song> playliste = new ArrayList<>();
 
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
 
         //Velkomst besked
@@ -24,21 +24,33 @@ public class SpotifyTest {
 
         User bruger;
 
-        if (brugerInput.equalsIgnoreCase("Free")){
+        if (brugerInput.equalsIgnoreCase("Free")) {
             bruger = new FreeUser(name);
-        }else if (brugerInput.equalsIgnoreCase("Premium")){
+        } else if (brugerInput.equalsIgnoreCase("Premium")) {
             bruger = new PremiumUser(name);
-        } else{
+        } else {
             System.out.println("ugyldigt UserType - FreeUser er derfor anvendt som standard");
             bruger = new FreeUser(name);
         }
 
-        userInput();
-
+        //*userInput();
+        Scanner sc = new Scanner (System.in);
+        int menu = sc.nextInt();
+        switch (menu){
+            case 1: User.addSong();
+            break;
+            case 2: User.removeSong();
+            break;
+            case 3:
     }
 
-        public static void userInput(){
-        Scanner sc = new Scanner (System.in);
+
+    }
+}
+
+
+       /* public static void userInput(){
+
             //laver en boolean metode for at kunne vælge
             boolean menuOpen = true;
             while (menuOpen) {
