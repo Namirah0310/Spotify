@@ -19,7 +19,7 @@ public class User {
 
     //Fjerner Sangene 
     public static boolean removeSong(ArrayList<Song> playliste, String titel){
-        for (Song s : playliste){
+        for (Song s : playliste) {
             if (s.getTitle().equalsIgnoreCase(titel)){
                 playliste.remove(s);
                 System.out.println("Sangen"+ titel + "Er nu fjernet");

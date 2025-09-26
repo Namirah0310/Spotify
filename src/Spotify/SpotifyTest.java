@@ -52,13 +52,14 @@ public class SpotifyTest {
                 System.out.println("6 - Afslut.");
 
                 int Choice = sc.nextInt();
+
                 if (Choice == 1) {
                     System.out.println("Adding Song.");
                     User.addSong();
 
                 } else if (Choice == 2) {
                     System.out.println("Removing Song.");
-                    String titel = sc.nextLine();
+                    String titel = sc.next();
                     User.removeSong(playliste, titel);
 
 
